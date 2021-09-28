@@ -26,7 +26,7 @@ const buttonClassNames =
 export default function Home() {
   const [currentAccount, setCurrentAccount] = useState(null)
   const [isMining, setIsMining] = useState(false)
-  const [mintedTokenId, setMintedTokenId] = useState('0')
+  const [mintedTokenId, setMintedTokenId] = useState(null)
 
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window
